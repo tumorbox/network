@@ -1,0 +1,27 @@
+package basic;
+
+import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class URLTest02 {
+
+	public static void main(String[] args) {
+		try {
+			URL url = new URL("http://cafefiles.naver.net/20120209_226/pododumok_13287752996753FNE4_jpg/%C0%E5%B5%BF%B0%C7_5_pododumok.jpg%20[%EC%B6%9C%EC%B2%98]%20url%EC%97%B0%EC%8A%B5%7C%EC%9E%91%EC%84%B1%EC%9E%90%20heaves1");
+			InputStream data =url.openStream();
+			File fileDir = filePath.getParentFile("C:\\iot\\Work\\network\\basicnetwork\\src");
+
+			filePath.mkdirs();
+		
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}
