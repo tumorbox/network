@@ -1,0 +1,10 @@
+1. 서버를 실행
+	ChatServerView(ChatSereverListener)
+	----------------
+		서버가 여러가지 형태를 확인할 수 있는 화면
+
+	2. 클라이언트 접속
+		1) ChatLogin(ChatLoginListener)을 먼저 실행해서 로그인(ip, port, 채팅nickname)
+		2) ClientChatView(ClientChatListener)가 실행
+		   ----------------
+			클라이언트가 채팅하는 화면
