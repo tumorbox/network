@@ -76,7 +76,7 @@ public class User extends Thread {
 	}
 
 	// 7-7. 클라이언트에게 메시지를 보내는 메소드를 정의
-	// 7-e-1. 기존 사용자가에게 메시지를 보내느 메소드를 정의
+	// 7-e-1. 기존 사용자가에게 메시지를 보내는 메소드를 정의
 	private void broadCast(String msg) {
 		int size = userlist.size();
 		for (int i = 0; i < size; i++) {
